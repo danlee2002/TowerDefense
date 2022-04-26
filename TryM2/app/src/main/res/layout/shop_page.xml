@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shopcopy"
+    >
+
+    <ImageButton
+        android:id="@+id/Tower1"
+        android:layout_width="182dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/tower1Text"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/tower1" />
+
+    <TextView
+        android:id="@+id/tower1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="232dp"
+        android:layout_marginLeft="232dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="50"
+        android:text="TOWER 1: 10 gold"
+        android:textColor="#FFD700"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <ImageButton
+        android:id="@+id/Tower2"
+        android:layout_width="182dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="760dp"
+        android:layout_marginLeft="760dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/tower2Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/tower2" />
+
+    <TextView
+        android:id="@+id/tower2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="440dp"
+        android:layout_marginLeft="440dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="50"
+        android:text="TOWER 2: 20 gold"
+        android:textColor="#FFD700"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tower1Text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <ImageButton
+        android:id="@+id/Tower3"
+        android:layout_width="182dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="540dp"
+        android:layout_marginLeft="540dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/tower3Text"
+        app:layout_constraintStart_toStartOf="@+id/Tower2"
+        app:srcCompat="@drawable/tower3" />
+
+    <TextView
+        android:id="@+id/tower3Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="424dp"
+        android:layout_marginLeft="424dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="50"
+        android:text="TOWER 3: 30 gold"
+        android:textColor="#FFD700"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tower2Text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <ImageButton
+        android:id="@+id/quit"
+        android:layout_width="49dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_delete"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp" />
+<!--    android:onClick="quitGame"-->
+
+
+
+    <TextView
+        android:id="@+id/playerGold1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="50"
+        android:text="100"
+        android:textColor="#FFD700"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+
+    <Button
+        android:id="@+id/continueToGame"
+        android:layout_width="219dp"
+        android:layout_height="107dp"
+
+        android:text="START GAME"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.815" />
+<!--    android:onClick="goToGame"-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

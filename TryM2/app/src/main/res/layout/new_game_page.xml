@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewGamePage"
+    android:background="@drawable/logpage_copy"
+    >
+
+    <EditText
+        style="@style/big_button"
+        android:layout_marginTop="300dp"
+        android:hint="USER NAME"
+        android:id="@+id/userName"
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:imeOptions="actionDone"
+        />
+<!--        android:layout_width="355dp"-->
+<!--        android:layout_height="72dp"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:background="@drawable/button_background"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:paddingHorizontal="25dp"-->
+<!--        android:translationZ="55dp"-->
+<!--        android:outlineProvider="background"-->
+
+    <Spinner
+        android:id="@+id/spinner_result_new"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="355dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/custom_button"
+        android:entries="@array/difficulties"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        />
+
+<!--        android:textSize="30sp"-->
+<!--        android:textAlignment="center"-->
+<!--        -->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:paddingHorizontal="25dp"-->
+<!--        android:translationZ="55dp"-->
+<!--        android:outlineProvider="background"-->
+
+
+<!--    -->
+<!--    <Button-->
+<!--        style="@style/small_button"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="400dp"-->
+<!--        android:text="EASY"-->
+<!--        />-->
+
+<!--        android:layout_width="115dp"-->
+<!--        android:layout_height="72dp"-->
+<!--        android:outlineProvider="background"-->
+<!--        android:paddingHorizontal="25dp"-->
+<!--        android:translationZ="55dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:background="@drawable/button_background"-->
+<!--        android:gravity="center"-->
+<!--        android:textColorHint="@color/white"-->
+
+
+<!--    <Button-->
+<!--        style="@style/small_button"-->
+<!--        android:layout_marginLeft="150dp"-->
+<!--        android:layout_marginTop="400dp"-->
+<!--        android:text="MED"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        style="@style/small_button"-->
+<!--        android:layout_marginLeft="270dp"-->
+<!--        android:layout_marginTop="400dp"-->
+<!--        android:text="Hard"-->
+<!--        />-->
+
+    <Button
+        style="@style/big_button"
+        android:id="@+id/loginButton"
+        android:layout_marginTop="500dp"
+        android:drawableLeft="@drawable/play_button_small"
+        android:text="LOGIN"
+        />
+<!--    android:onClick="startNewGame"-->
+
+</FrameLayout>
